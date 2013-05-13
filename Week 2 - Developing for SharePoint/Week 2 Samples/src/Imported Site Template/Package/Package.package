@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="06fb339a-c9bc-4a03-a3b9-793e3e553992" solutionId="ab8414f2-9a2d-49d4-b09d-c4e4cfce2b25" resetWebServer="false" sharePointProductVersion="15.0" name="WspImportProject1" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cff9a0ae-5dc0-48f3-8235-7d76e00075c6" />
+    <featureReference itemId="a3826919-e994-457d-b4cb-83be3edc4c61" />
+    <featureReference itemId="75440872-7c48-4424-8893-da943446e29c" />
+    <featureReference itemId="414818db-62bf-4444-ba33-2edecf49b835" />
+    <featureReference itemId="2417ae94-9e79-4ccb-8b49-a5528e943b1e" />
+  </features>
+</package>

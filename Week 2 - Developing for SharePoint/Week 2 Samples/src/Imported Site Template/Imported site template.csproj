@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D08AB04D-DB6F-42DF-8762-156D1B480AC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WspImportProject1</RootNamespace>
+    <AssemblyName>WspImportProject1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature5\Feature5.Template.xml">
+      <DependentUpon>Feature5.feature</DependentUpon>
+    </Content>
+    <Content Include="List instances\Site Pages\SitePages_DocumentTemplates\Elements.xml" />
+    <Content Include="Modules\Shared DocumentsForms_Features_DocumentLibrary_doclib\Elements.xml" />
+    <Content Include="Modules\Shared DocumentsForms_pages\Elements.xml" />
+    <Content Include="Modules\SiteAssetsForms_1033_STS_doctemp_word\Elements.xml" />
+    <Content Include="Modules\SiteAssetsForms_Features_DocumentLibrary_doclib\Elements.xml" />
+    <Content Include="Modules\SiteAssetsForms_pages\Elements.xml" />
+    <Content Include="Modules\SitePagesForms_Features_WebPageLibrary_webpagelib\Elements.xml" />
+    <Content Include="Modules\SitePagesForms_pages\Elements.xml" />
+    <Content Include="Other elements\Receivers2\Elements.xml" />
+    <Content Include="PropertyBags\Elements.xml" />
+    <Content Include="Web templates\Team Site\Elements.xml" />
+    <Content Include="Web templates\Team Site\ONet.xml" />
+    <None Include="Built-In List Instances\Composed Looks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c25cdae0-8008-4c00-98c5-64fd8b288489}</SharePointProjectItemId>
+    </None>
+    <None Include="Built-In List Instances\Composed Looks\_catalogsdesign_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c1b43740-dfe5-4f4f-996d-4f293d91c1b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Built-In List Instances\Master Page Gallery\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4971488-0af9-4930-b0ba-5b28798b8d34}</SharePointProjectItemId>
+    </None>
+    <None Include="Built-In List Instances\Master Page Gallery\_catalogsmasterpage_global\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6fbe2157-f5aa-453e-bac6-cfb07e62007f}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Administrative Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{240fc88e-2444-4e15-9905-b8f77cb1863b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Announcement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97da4fde-8993-4d7d-83e5-398fa65df5f1}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Article Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{72a13459-3493-4406-93e6-4142fc901303}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ASP NET Master Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fecd927a-b79b-443e-82ab-2ef579cd63f2}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Audio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc28725f-6a93-45b8-8798-d307a7c53ae4}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Basic Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f26c4e4-a293-4799-bf5f-715770366f8b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Catalog-Item Reuse\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54d02cca-b13a-4cfe-8191-2c94f046b34c}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Category7\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0adf39dc-002d-44a0-882f-0724f7c27bc8}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Circulation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32412cd2-3183-4a4a-a1c0-90fe157022b2}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Comment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bffbd1c3-deff-4924-8bad-a4cd195c86cd}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Common Indicator Columns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a654b62-3d0a-4412-a0fd-7e4b977a56ee}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Community Member\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23e5e861-535d-4f85-9e16-f4c23a836c4f}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Contact1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c8418b6-8fc5-4d4e-ab24-49edfda0f7ab}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ContentType1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5146fe9b-cb78-4dc9-a5eb-eb8e1c713a81}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ContentType2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7049c3a2-2967-4ba6-9ad0-b1840d197f7d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ContentType3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{196f3afc-91d9-484a-ae23-3b3c64085c2a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ContentType4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{667807e4-5ad4-4e65-92dc-0c84b235b449}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ContentType5\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7bbce043-0c25-42b1-9279-7f468bebf679}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15b2b755-f400-4222-a076-1d95a98bab1c}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Control Display Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f9950ccd-5a91-46a2-8619-482f347b3841}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Design File\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c760649-3340-40f3-b035-760aa0b5c675}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Device Channel Mappings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{45bbf0dc-a796-4951-8ee3-bef2461d9c15}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Device Channel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{87a623ef-5ce0-480b-9247-5a30993e3312}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Discussion\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ccead45e-b128-4350-9337-a0971040f03a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Display Template Code\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2f26728-07c9-4597-85e1-44d5121f9147}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Display Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{653564c7-4a10-468c-91df-b120daed5fe2}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Document Collection Folder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da4cfe9b-39a4-4bf2-b4d4-5e8bde3da83a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Document Set\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{875ae08d-297c-4b1a-ab01-6ae7a4e0124b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Document\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca31b604-fb82-404d-a847-dc4a48427a68}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\DomainGroup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f8e8b46a-9b5e-4cd9-b398-6a1a82347675}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Dublin Core Columns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16149b49-1cd6-40f2-b7d8-025163ffb4f1}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\East Asia Contact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{349cf3d9-182f-431f-9c5d-718870784fc7}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Enterprise Wiki Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e8cd354-7ad4-4db6-a969-a727afc888bb}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Error Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f953d5eb-7c0e-45a0-b1bb-8dd4d470fbf3}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Event\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ef22eff-e5ca-4958-b083-c7658f3046f8}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Excel based Status Indicator\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79634a7c-8a81-4e70-8035-b1d4e521d315}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Filter Display Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b08b59cf-fdd7-4035-9ded-52828f96a653}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Fixed Value based Status Indicator\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3779562b-e8a5-4be8-8078-8f5444231079}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Folder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{432fb6b4-3577-44e3-a95d-67687ef9ca5e}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Form\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7bbec2a8-0aed-4f19-bc6a-30a705339452}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Group Display Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d3bbefe3-e2f0-46d0-9633-7e6f213c7766}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Health Analyzer Report\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84c2da67-97a0-4caf-9df6-4afe56923a7d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Health Analyzer Rule Definition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90261ea5-fb98-4b12-8f09-ede37a4ebf5a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Holiday1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a3b94483-34bc-4685-bf2b-062b978ce3c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Html Master Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c20d5084-a903-4762-ba7c-e51a99400b50}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Html Page Layout\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ad2f7fc-ce57-497d-900f-ea41501f114b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Image\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cce1c9ea-b5fd-4d7c-951c-357fb4401e78}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\InfoPath Form Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83cf4426-6c9d-4cd0-9939-e1355982c9f8}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Issue\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{de61220f-286d-48e9-b772-cd696ebf2dc7}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Item Display Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ee9e1af8-2d38-41ac-a7eb-9def24d81144}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Item\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6488718a-d937-4ccb-8149-ce4c81fa9244}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\JavaScript Display Template\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1e7faf92-76aa-43ee-aeb8-3d6d84c2c6c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Link to a Document\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{151db0e9-0214-44ee-b60a-8b9a18598741}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Link\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c1061a26-0676-4559-b322-27fe7d124ee9}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\List View Style\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ce9c38c7-1607-4354-82fa-dd7f6bee0b50}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Master Page Preview\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3a6bad9f-c53d-4d18-b4bb-779f30f0b71b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Master Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{41435cd1-aaf2-4ec6-8c9b-0151e8ba029a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Message1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{74ea1a4b-60c9-428e-9784-8a7a39688472}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\New Word\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b2bfeb5-8851-4a78-8d7e-9216a9c34dd8}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Office Data Connection File\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3340e67d-d4a3-4447-b75e-843ef2a8503f}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Official Notice\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f63036d2-3960-409e-a53b-fd4b148c892a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Page Layout1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a784dcf1-cff1-4543-9da1-99fdec6fff53}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Page Output Cache\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{47c2c06c-a0c0-4f61-9ed0-4189a6768709}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{57b807fd-c9e3-47c2-be52-4801da596141}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Person\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{38a8fa68-b27f-4fff-a389-71ea1b0f27ce}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Phone Call Memo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb06469f-554d-4feb-8bd5-3ad3b4a8de91}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Picture1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4bf1f6af-6434-4255-b1ee-829db824c5b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Post2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20b0d3d1-7dcc-4e74-a71a-f42354c182d9}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Project Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{492a7005-3977-4e8f-bad3-24730b7652d0}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Published Link\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5bec4b07-9c8a-4e03-a0cd-0d86325228b1}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Redirect Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{528b5e91-2fd4-454f-bd30-383d9dc44986}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Report\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11fe68cd-9322-4ea2-9b51-da32a70617e5}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Reservations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11d08741-b234-4111-90c1-8cdeb763a9fb}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Resource Group\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e535a1d3-0e49-4d5f-9f9a-75e692711d76}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Resource\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{75d45e11-71d2-4290-a9bb-247b05d0ba9c}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Reusable HTML1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1b641284-10cf-4123-ad9b-554cd51e2bec}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Reusable Text1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4e57e8e6-e4d0-4002-b683-a9bd4d87486d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Rich Media Asset\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2cace6e5-acaf-4e36-8aa3-3b4085f56a1b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\RootOfList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d628a3af-a020-4e8b-807c-588bcd9c1138}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Rule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a527dcd3-bb7e-42ae-99fe-cf5e5926d6c9}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Schedule and Reservations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69967dde-0e13-4d4b-83f1-46818a9937dc}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Schedule1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e4c62c5a-b75e-4a07-bdf4-1c165fd79afb}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\SharePoint List based Status Indicator\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af98dfee-38aa-437e-8864-5f77e08e7b22}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\SharePoint Server Workflow Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ccd579ef-5980-412c-83c0-dab361c99255}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\SharePointGroup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81ca7b78-eb8b-459f-a11d-ab827b20718b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Signatures Workflow Task Deprecated\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b7d3c19e-6893-4c76-b105-6bb17cbf0d03}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Site Membership\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5709e716-6b02-4701-af7f-164abe302741}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\SQL Server Analysis Services based Status Indicator\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0f5250d-2384-4550-acad-869914300e6d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Summary Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09a233a0-c9b3-4ded-81df-4960402b4771}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\System Master Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1916d297-9c01-4a57-a76b-9f221c84ec3d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\System Media Collection\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dfbc907-5483-402d-9137-6b903227a99f}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\System Page Layout\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{68542b57-9697-431c-a9e4-e16b716a5abf}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\System Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19e3ffe5-b856-4c0a-b2dc-ae6cd0bac1fa}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\System\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f04bf480-1062-4adf-87ca-83860209b568}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{662779e3-a1c4-4bb7-b57f-13c93c43e68a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Timecard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2dfb4ab-dfd9-4186-a922-fd8db629b38a}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Translation Package\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b55baa1e-af92-446f-94f3-e4a5e52bb4d2}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Translation Status2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aff37731-cf16-44ca-9f2c-beae9e0c6473}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Universal Data Connection File\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2e0ccfce-d2ba-41a3-b9ba-e8dd40f2c587}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Unknown Document Type\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16455556-531b-4c4a-8aa5-922f05c4268c}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\User Workflow Document\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{225b0b99-bc1d-4252-83fb-aa76d4b2c914}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Users\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66cc5723-b381-46d4-b00f-a8248fda80c5}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Video Rendition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e72d92fe-1b1d-4644-adac-fc9ebf41413d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Video\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{568fe74b-f59f-4c29-bbba-45a9d6aefe6e}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Web Part Page with Status List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0a3f473e-e64c-4a58-9ab7-1ae7865e1dbd}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Web Part Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53e4c38a-ea03-429f-8738-bd8d514f92c4}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Welcome Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c383e607-3368-4921-be1c-6bab7981a0a2}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Wiki Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33dc37dc-9d02-49ab-9c21-6018b4da44b6}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Workflow History\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4731f5d2-8020-4a9c-a65d-b6f208913c6c}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Workflow Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4ce5136-884e-4068-a668-7edcf6bfa482}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\WorkflowServiceDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34c7271b-1ca4-407e-a0e4-05735d973489}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\WorkflowServiceSubscription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1de7abdf-4f0b-4f63-9330-aefa9c679a91}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{cff9a0ae-5dc0-48f3-8235-7d76e00075c6}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{a3826919-e994-457d-b4cb-83be3edc4c61}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{75440872-7c48-4424-8893-da943446e29c}</FeatureId>
+    </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{414818db-62bf-4444-ba33-2edecf49b835}</FeatureId>
+    </None>
+    <None Include="Features\Feature5\Feature5.feature">
+      <FeatureId>{2417ae94-9e79-4ccb-8b49-a5528e943b1e}</FeatureId>
+    </None>
+    <None Include="Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{913a8866-a17a-493b-84c8-4b8241c8ec58}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="List instances\Documents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1e155c68-d485-4732-9d4e-6bbe1a17c388}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Site Assets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d54b8bac-d787-4222-8819-869ddd6799e7}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Site Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ce7382f3-14b2-4c20-aff0-ab1e0973e045}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Site Pages\SitePages_DocumentTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{61ed1be9-8583-49bb-8fb1-41f9f8f60e9a}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\m_Features_MobilityRedirect\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{517c9e1b-e07c-4376-ab0d-de50ff7e707b}</SharePointProjectItemId>
+    </None>
+    <Content Include="Modules\Shared DocumentsForms_1033_STS_doctemp_word\Elements.xml" />
+    <Content Include="Modules\Shared DocumentsForms_1033_STS_doctemp_word\Files\Shared Documents\Forms\template.dotx" />
+    <None Include="Modules\Shared DocumentsForms_1033_STS_doctemp_word\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0467fbb-3162-4c98-b95f-40a90385a414}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Shared DocumentsForms_Features_DocumentLibrary_doclib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a04d92d-86d5-4a1e-8fc1-97e3099b369a}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Shared DocumentsForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bdf46fd6-c372-4631-b219-205c6f40a9bd}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SiteAssetsForms_1033_STS_doctemp_word\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{308f9c16-634d-44fe-a5e7-8e039318b3e8}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SiteAssetsForms_Features_DocumentLibrary_doclib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c667c43-96bf-4276-a5e2-4f65ba9f1a02}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SiteAssetsForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4c3dcb5d-9139-4b6d-b979-4c55b9d32099}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SitePagesForms_Features_WebPageLibrary_webpagelib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71db4b89-04ca-4f11-8fcc-b93d675a11ff}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SitePagesForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59829fa8-cf44-4b1b-af47-deb657e06490}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\_catalogsmasterpageForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{93ac27b2-62e4-4131-bb8a-4ee828a10c46}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\_Features_GettingStarted\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2248a5a4-aef5-40d6-85f8-716201f017d5}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\_SiteTemplates_STS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab5f0b71-b537-421c-9660-ebf5b9beb3a6}</SharePointProjectItemId>
+    </None>
+    <None Include="Other elements\Receivers1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7229cb49-7a88-4ad6-ac17-bf072790beed}</SharePointProjectItemId>
+    </None>
+    <None Include="Other elements\Receivers2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{74aa3695-fb48-4542-a487-95c57fc31c5d}</SharePointProjectItemId>
+    </None>
+    <None Include="Other elements\Receivers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f4bfbf7-bfe6-43c9-8d0d-850d2aca17f4}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{06fb339a-c9bc-4a03-a3b9-793e3e553992}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PropertyBags\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a217a6c5-06de-4f65-8304-e9e5511de022}</SharePointProjectItemId>
+    </None>
+    <None Include="Web templates\Team Site\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e8487bf7-8105-45a2-88ef-b8b8c076401a}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Built-In List Instances\Composed Looks\Elements.xml" />
+    <Content Include="Built-In List Instances\Composed Looks\Schema.xml" />
+    <Content Include="Built-In List Instances\Composed Looks\_catalogsdesign_pages\Elements.xml" />
+    <Content Include="Built-In List Instances\Master Page Gallery\Elements.xml" />
+    <Content Include="Built-In List Instances\Master Page Gallery\Schema.xml" />
+    <Content Include="Built-In List Instances\Master Page Gallery\_catalogsmasterpage_global\Elements.xml" />
+    <Content Include="Content types\Administrative Task\Elements.xml" />
+    <Content Include="Content types\Announcement\Elements.xml" />
+    <Content Include="Content types\Article Page\Elements.xml" />
+    <Content Include="Content types\ASP NET Master Page\Elements.xml" />
+    <Content Include="Content types\Audio\Elements.xml" />
+    <Content Include="Content types\Basic Page\Elements.xml" />
+    <Content Include="Content types\Catalog-Item Reuse\Elements.xml" />
+    <Content Include="Content types\Category7\Elements.xml" />
+    <Content Include="Content types\Circulation\Elements.xml" />
+    <Content Include="Content types\Comment\Elements.xml" />
+    <Content Include="Content types\Common Indicator Columns\Elements.xml" />
+    <Content Include="Content types\Community Member\Elements.xml" />
+    <Content Include="Content types\Contact1\Elements.xml" />
+    <Content Include="Content types\ContentType1\Elements.xml" />
+    <Content Include="Content types\ContentType2\Elements.xml" />
+    <Content Include="Content types\ContentType3\Elements.xml" />
+    <Content Include="Content types\ContentType4\Elements.xml" />
+    <Content Include="Content types\ContentType5\Elements.xml" />
+    <Content Include="Content types\ContentType\Elements.xml" />
+    <Content Include="Content types\Control Display Template\Elements.xml" />
+    <Content Include="Content types\Design File\Elements.xml" />
+    <Content Include="Content types\Device Channel Mappings\Elements.xml" />
+    <Content Include="Content types\Device Channel\Elements.xml" />
+    <Content Include="Content types\Discussion\Elements.xml" />
+    <Content Include="Content types\Display Template Code\Elements.xml" />
+    <Content Include="Content types\Display Template\Elements.xml" />
+    <Content Include="Content types\Document Collection Folder\Elements.xml" />
+    <Content Include="Content types\Document Set\Elements.xml" />
+    <Content Include="Content types\Document\Elements.xml" />
+    <Content Include="Content types\DomainGroup\Elements.xml" />
+    <Content Include="Content types\Dublin Core Columns\Elements.xml" />
+    <Content Include="Content types\East Asia Contact\Elements.xml" />
+    <Content Include="Content types\Enterprise Wiki Page\Elements.xml" />
+    <Content Include="Content types\Error Page\Elements.xml" />
+    <Content Include="Content types\Event\Elements.xml" />
+    <Content Include="Content types\Excel based Status Indicator\Elements.xml" />
+    <Content Include="Content types\Filter Display Template\Elements.xml" />
+    <Content Include="Content types\Fixed Value based Status Indicator\Elements.xml" />
+    <Content Include="Content types\Folder\Elements.xml" />
+    <Content Include="Content types\Form\Elements.xml" />
+    <Content Include="Content types\Group Display Template\Elements.xml" />
+    <Content Include="Content types\Health Analyzer Report\Elements.xml" />
+    <Content Include="Content types\Health Analyzer Rule Definition\Elements.xml" />
+    <Content Include="Content types\Holiday1\Elements.xml" />
+    <Content Include="Content types\Html Master Page\Elements.xml" />
+    <Content Include="Content types\Html Page Layout\Elements.xml" />
+    <Content Include="Content types\Image\Elements.xml" />
+    <Content Include="Content types\InfoPath Form Template\Elements.xml" />
+    <Content Include="Content types\Issue\Elements.xml" />
+    <Content Include="Content types\Item Display Template\Elements.xml" />
+    <Content Include="Content types\Item\Elements.xml" />
+    <Content Include="Content types\JavaScript Display Template\Elements.xml" />
+    <Content Include="Content types\Link to a Document\Elements.xml" />
+    <Content Include="Content types\Link\Elements.xml" />
+    <Content Include="Content types\List View Style\Elements.xml" />
+    <Content Include="Content types\Master Page Preview\Elements.xml" />
+    <Content Include="Content types\Master Page\Elements.xml" />
+    <Content Include="Content types\Message1\Elements.xml" />
+    <Content Include="Content types\New Word\Elements.xml" />
+    <Content Include="Content types\Office Data Connection File\Elements.xml" />
+    <Content Include="Content types\Official Notice\Elements.xml" />
+    <Content Include="Content types\Page Layout1\Elements.xml" />
+    <Content Include="Content types\Page Output Cache\Elements.xml" />
+    <Content Include="Content types\Page\Elements.xml" />
+    <Content Include="Content types\Person\Elements.xml" />
+    <Content Include="Content types\Phone Call Memo\Elements.xml" />
+    <Content Include="Content types\Picture1\Elements.xml" />
+    <Content Include="Content types\Post2\Elements.xml" />
+    <Content Include="Content types\Project Page\Elements.xml" />
+    <Content Include="Content types\Published Link\Elements.xml" />
+    <Content Include="Content types\Redirect Page\Elements.xml" />
+    <Content Include="Content types\Report\Elements.xml" />
+    <Content Include="Content types\Reservations\Elements.xml" />
+    <Content Include="Content types\Resource Group\Elements.xml" />
+    <Content Include="Content types\Resource\Elements.xml" />
+    <Content Include="Content types\Reusable HTML1\Elements.xml" />
+    <Content Include="Content types\Reusable Text1\Elements.xml" />
+    <Content Include="Content types\Rich Media Asset\Elements.xml" />
+    <Content Include="Content types\RootOfList\Elements.xml" />
+    <Content Include="Content types\Rule\Elements.xml" />
+    <Content Include="Content types\Schedule and Reservations\Elements.xml" />
+    <Content Include="Content types\Schedule1\Elements.xml" />
+    <Content Include="Content types\SharePoint List based Status Indicator\Elements.xml" />
+    <Content Include="Content types\SharePoint Server Workflow Task\Elements.xml" />
+    <Content Include="Content types\SharePointGroup\Elements.xml" />
+    <Content Include="Content types\Signatures Workflow Task Deprecated\Elements.xml" />
+    <Content Include="Content types\Site Membership\Elements.xml" />
+    <Content Include="Content types\SQL Server Analysis Services based Status Indicator\Elements.xml" />
+    <Content Include="Content types\Summary Task\Elements.xml" />
+    <Content Include="Content types\System Master Page\Elements.xml" />
+    <Content Include="Content types\System Media Collection\Elements.xml" />
+    <Content Include="Content types\System Page Layout\Elements.xml" />
+    <Content Include="Content types\System Page\Elements.xml" />
+    <Content Include="Content types\System\Elements.xml" />
+    <Content Include="Content types\Task\Elements.xml" />
+    <Content Include="Content types\Timecard\Elements.xml" />
+    <Content Include="Content types\Translation Package\Elements.xml" />
+    <Content Include="Content types\Translation Status2\Elements.xml" />
+    <Content Include="Content types\Universal Data Connection File\Elements.xml" />
+    <Content Include="Content types\Unknown Document Type\Elements.xml" />
+    <Content Include="Content types\User Workflow Document\Elements.xml" />
+    <Content Include="Content types\Users\Elements.xml" />
+    <Content Include="Content types\Video Rendition\Elements.xml" />
+    <Content Include="Content types\Video\Elements.xml" />
+    <Content Include="Content types\Web Part Page with Status List\Elements.xml" />
+    <Content Include="Content types\Web Part Page\Elements.xml" />
+    <Content Include="Content types\Welcome Page\Elements.xml" />
+    <Content Include="Content types\Wiki Page\Elements.xml" />
+    <Content Include="Content types\Workflow History\Elements.xml" />
+    <Content Include="Content types\Workflow Task\Elements.xml" />
+    <Content Include="Content types\WorkflowServiceDefinition\Elements.xml" />
+    <Content Include="Content types\WorkflowServiceSubscription\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\Elements.xml" />
+    <Content Include="List instances\Documents\Elements.xml" />
+    <Content Include="List instances\Documents\Schema.xml" />
+    <Content Include="List instances\Site Assets\Elements.xml" />
+    <Content Include="List instances\Site Assets\Schema.xml" />
+    <Content Include="List instances\Site Pages\Elements.xml" />
+    <Content Include="List instances\Site Pages\Schema.xml" />
+    <Content Include="Modules\m_Features_MobilityRedirect\Elements.xml" />
+    <Content Include="Modules\_catalogsmasterpageForms_pages\Elements.xml" />
+    <Content Include="Modules\_Features_GettingStarted\Elements.xml" />
+    <Content Include="Modules\_SiteTemplates_STS\Elements.xml" />
+    <Content Include="Other elements\Receivers1\Elements.xml" />
+    <Content Include="Other elements\Receivers\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\resources.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature2\resources.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature3\resources.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature5\resources.en-US.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

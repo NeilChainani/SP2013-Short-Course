@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="Shared DocumentsForms_1033\STS\doctemp\word" Url="Shared Documents/Forms" RootWebOnly="FALSE" Path="Files\Shared Documents\Forms" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="template.dotx" DocumentTemplateForList="Shared Documents/Forms" Level="Published" Path="template.dotx" />
+	</Module>
+</Elements>
