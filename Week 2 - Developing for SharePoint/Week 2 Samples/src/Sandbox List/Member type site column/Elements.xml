@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+      ID="{dfa867d2-79d0-496d-b379-d35b181a0c06}"
+      Name="MemberType"
+      DisplayName="Member Type"
+      Type="Choice"
+      Required="True"
+      Group="Contoso Site Columns">
+    <CHOICES>
+      <CHOICE>Full-time Employee</CHOICE>
+      <CHOICE>Part-time Employee</CHOICE>
+      <CHOICE>Intern</CHOICE>
+      <CHOICE>Contractor</CHOICE>
+    </CHOICES>
+  </Field>
+
+</Elements>
