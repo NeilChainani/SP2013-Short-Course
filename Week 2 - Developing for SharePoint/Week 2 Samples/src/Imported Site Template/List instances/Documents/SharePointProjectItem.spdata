@@ -4,4 +4,7 @@
     <ProjectItemFile Source="Schema.xml" Target="Files\Shared Documents\" Type="ElementFile" />
     <ProjectItemFile Source="Elements.xml" Target="Documents\" Type="ElementManifest" />
   </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="DeploymentConflictResolutionBehavior" Value="Automatic" />
+  </ExtensionData>
 </ProjectItem>
