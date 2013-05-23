@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Web Part Verbs" List="113" Url="_catalogs/wp">
+    <File Path="Web Part Verbs\Web Part Verbs.webpart" Url="Server Side Web Parts_Web Part Verbs.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="CSU Demos" />
+    </File>
+  </Module>
+</Elements>

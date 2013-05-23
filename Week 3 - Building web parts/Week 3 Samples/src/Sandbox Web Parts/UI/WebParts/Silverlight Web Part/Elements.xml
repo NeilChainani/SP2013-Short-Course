@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Silverlight Web Part" List="113" Url="_catalogs/wp">
+    <File Path="Silverlight Web Part\Silverlight Web Part.webpart" Url="Sandbox Web Parts_Silverlight Web Part.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="CSU Demos" />
+    </File>
+  </Module>
+  <Module Name="Silverlight Web Part">
+    <File Path="Silverlight Web Part\SilverlightProject1.xap" Url="SiteAssets/Sandbox Web Parts/Silverlight Web Part/SilverlightProject1.xap" />
+  </Module>
+</Elements>

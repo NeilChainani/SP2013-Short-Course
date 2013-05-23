@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{372C9EC4-E62F-4BB2-99F0-23096AE91C2C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSU.SharePoint.Demo.ServerSideWebParts</RootNamespace>
+    <AssemblyName>CSU.SharePoint.Demo.ServerSideWebParts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\WebParts\Basic Web Part\Basic Web Part.cs" />
+    <Compile Include="UI\WebParts\Consumer Web Part\Consumer Web Part.cs" />
+    <Compile Include="UI\WebParts\Extended Content Query Web Part\Extended Content Query Web Part.cs" />
+    <Compile Include="UI\WebParts\Provider Web Part\Provider Web Part.cs" />
+    <Compile Include="UI\WebParts\Ribbon Button Web Part\Ribbon Button Web Part.cs" />
+    <Compile Include="UI\WebParts\Web Part Verbs\Web Part Verbs.cs" />
+    <Compile Include="UI\WebParts\Web Part with Properties\Web Part with Properties.cs" />
+    <Compile Include="Utilities\IDemoWebPartConnection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{04b8d0de-8ba1-4e75-8538-cbdf90dbeeda}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{06d211ed-7781-468b-9c1c-64d65cae9094}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="UI\Pages\Example Page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fd2b24f1-0b6e-4a4c-b9d2-a1f66280b7ee}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Basic Web Part\Basic Web Part.webpart" />
+    <None Include="UI\WebParts\Basic Web Part\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8b5a3d9e-be3a-4cdf-818c-ed7def25e762}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Consumer Web Part\Consumer Web Part.webpart" />
+    <None Include="UI\WebParts\Consumer Web Part\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36b21150-033a-4558-a308-10723b9c4b13}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Extended Content Query Web Part\Extended Content Query Web Part.webpart" />
+    <None Include="UI\WebParts\Extended Content Query Web Part\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0fd6074-1a9b-4179-b560-a3ee82f97973}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Provider Web Part\Provider Web Part.webpart" />
+    <None Include="UI\WebParts\Provider Web Part\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb756628-a47d-4a65-b45f-bfd102f78151}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Ribbon Button Web Part\Ribbon Button Web Part.webpart" />
+    <None Include="UI\WebParts\Ribbon Button Web Part\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e7657d08-5422-4e88-91fb-4c35f2cb12fc}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Web Part Verbs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{593ae1af-77c5-4029-9187-e5ede46f27ed}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Web Part Verbs\Web Part Verbs.webpart" />
+    <None Include="UI\WebParts\Web Part with Properties\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59df8361-ec46-4887-aa1b-cac5bcc5ddf9}</SharePointProjectItemId>
+    </None>
+    <None Include="UI\WebParts\Web Part with Properties\Web Part with Properties.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="UI\Pages\Example Page\Elements.xml" />
+    <Content Include="UI\Pages\Example Page\example.aspx" />
+    <Content Include="UI\WebParts\Basic Web Part\Elements.xml" />
+    <Content Include="UI\WebParts\Consumer Web Part\Elements.xml" />
+    <Content Include="UI\WebParts\Extended Content Query Web Part\Elements.xml" />
+    <Content Include="UI\WebParts\Provider Web Part\Elements.xml" />
+    <Content Include="UI\WebParts\Ribbon Button Web Part\CustomContextualTabPageComponent.js" />
+    <Content Include="UI\WebParts\Ribbon Button Web Part\Elements.xml" />
+    <Content Include="UI\WebParts\Web Part Verbs\Elements.xml" />
+    <Content Include="UI\WebParts\Web Part with Properties\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

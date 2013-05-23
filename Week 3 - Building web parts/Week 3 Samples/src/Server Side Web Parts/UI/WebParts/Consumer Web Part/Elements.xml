@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Consumer Web Part" List="113" Url="_catalogs/wp">
+    <File Path="Consumer Web Part\Consumer Web Part.webpart" Url="Server Side Web Parts_Consumer Web Part.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="CSU Demos" />
+    </File>
+  </Module>
+</Elements>
