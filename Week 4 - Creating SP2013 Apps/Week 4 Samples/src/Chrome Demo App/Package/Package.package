@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="42e551a9-e004-4595-bd99-40bcdc1869fd" 
+        solutionId="42e551a9-e004-4595-bd99-40bcdc1869fd" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Chrome_Demo_App"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="b419a3d6-b0c7-4ce7-ab0d-96bd8743ff9d" />
+  </features>
+</package>

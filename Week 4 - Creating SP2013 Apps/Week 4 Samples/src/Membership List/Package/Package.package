@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="526058c0-e5a5-4a77-a3f5-3f75185c5111" 
+        solutionId="526058c0-e5a5-4a77-a3f5-3f75185c5111" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Membership_List"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="e51378cc-2895-4cf7-a81f-1d8010fbf15c" />
+  </features>
+</package>

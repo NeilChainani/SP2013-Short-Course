@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="c746188a-bebd-4e0b-a430-987cae09808f" 
+        solutionId="c746188a-bebd-4e0b-a430-987cae09808f" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Custom_Ribbon_Button"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="8e2c230a-6115-47d3-9212-bc0e8ac82602" />
+  </features>
+</package>

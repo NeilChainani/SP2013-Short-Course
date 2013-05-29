@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Custom Task List"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/Custom Task List"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Example task one</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Example task two</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Example task three</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Example task four</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Example task five</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
